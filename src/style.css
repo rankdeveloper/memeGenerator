@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+}
+.header-inner {
+  display: flex;
+  width: 70%;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+
+  color: white;
+}
+
+.header .logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.header .owner {
+  cursor: pointer;
+  font-weight: 450;
+}
+
+.meme-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form {
+  padding: 0 20px;
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 20px;
+  width: 70%;
+}
+.input {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.input input {
+  width: 50%;
+  height: 2rem;
+  outline: none;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+  border-radius: 5px;
+}
+
+button {
+  height: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.meme {
+  position: relative;
+  border-radius: 5px;
+  width: 70%;
+}
+.meme img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+  border-radius: 5px;
+}
+.meme .text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #711f8d;
+  letter-spacing: 1px;
+}
+.bottomText {
+  bottom: 0;
+}
+
+.topText {
+  top: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  .header-inner {
+    width: 90%;
+  }
+  .form {
+    margin-top: 10px;
+    width: 90%;
+  }
+  .input {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    /* width:100%; */
+  }
+  .input input {
+    width: 100%;
+  }
+  .meme {
+    width: 90%;
+    margin-top: 40px;
+  }
+}
